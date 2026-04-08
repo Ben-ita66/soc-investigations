@@ -75,7 +75,7 @@ v=spf1 +a +mx -all +a:serlogal.arnoia.com
 ## 4. Embedded URL Analysis
 
 **Tool used:** CheckShortURL (checkshorturl.com)  
-**URL analyzed:** `https://tinyurl[.]com/ypu5kfts`
+**URL analyzed:** `https[:]//tinyurl[.]com/ypu5kfts`
 
 | Check | Finding |
 |-------|---------|
