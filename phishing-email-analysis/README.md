@@ -39,7 +39,7 @@ A suspicious email was submitted for analysis. The email claimed to be from the 
 ## 2. Email Address Investigation
 
 ### Sender — info@libreriacies.es
-The email claims to be from the Microsoft Security Team. Legitimate security emails from Microsoft arrive from the domain `@accountprotection.microsoft.com`. The domain `libreriacies.es` has no affiliation with Microsoft Corporation — this mismatch is a primary indicator of impersonation.
+The email claims to be from the Microsoft Security Team. Legitimate security emails from Microsoft arrive from the domain `@accountprotection.microsoft.com`. The domain `libreriacies.es` has no affiliation with Microsoft Corporation — this mismatch is a primary indicator of impersonation. Also it has no DMARC Record which is suspicious.
 
 ### Recipient — sonyundefinedralph@gmail.com
 - Investigated using **HaveIBeenPwned**
@@ -63,6 +63,7 @@ The email claims to be from the Microsoft Security Team. Legitimate security ema
 ```
 v=spf1 +a +mx -all +a:serlogal.arnoia.com
 ```
+![Screenshot](screenshots/Screenshot%202026-04-08%20143722.png)
 
 **Issues identified:**
 - The `-all` directive should terminate the record. Any entries after it are ignored by mail servers
@@ -85,6 +86,8 @@ v=spf1 +a +mx -all +a:serlogal.arnoia.com
 | Redirect Technique | Short URL used to conceal true malicious destination |
 
 Using a URL shortener to hide a redirect destination is a well-documented phishing technique. TinyURL independently identified and terminated this link for abuse, confirming malicious intent.
+
+![Screenshot](screenshots/Screenshot%202026-04-08%20142701.png)
 
 ---
 
