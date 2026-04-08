@@ -41,6 +41,8 @@ A suspicious email was submitted for analysis. The email claimed to be from the 
 ### Sender — info@libreriacies.es
 The email claims to be from the Microsoft Security Team. Legitimate security emails from Microsoft arrive from the domain `@accountprotection.microsoft.com`. The domain `libreriacies.es` has no affiliation with Microsoft Corporation — this mismatch is a primary indicator of impersonation. Also it has no DMARC Record which is suspicious.
 
+![Screenshot](screenshots/Screenshot%202026-04-08%20142531.png)
+
 ### Recipient — sonyundefinedralph@gmail.com
 - Investigated using **HaveIBeenPwned**
 - Result: No data breaches found
