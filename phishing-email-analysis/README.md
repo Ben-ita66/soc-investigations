@@ -39,7 +39,7 @@ A suspicious email was submitted for analysis. The email claimed to be from the 
 ## 2. Email Address Investigation
 
 ### Sender — info@libreriacies.es
-The email claims to be from the Microsoft Security Team. Legitimate security emails from Microsoft arrive from the domain `@accountprotection.microsoft.com`. The domain `libreriacies.es` has no affiliation with Microsoft Corporation — this mismatch is a primary indicator of impersonation. Also it has no DMARC Record which is suspicious.
+The email claims to be from the Microsoft Security Team. The domain `libreriacies.es` has no affiliation with Microsoft Corporation — this mismatch is a primary indicator of impersonation. Also it has no DMARC Record which is suspicious.
 
 ![Screenshot](screenshots/Screenshot%202026-04-08%20142531.png)
 
@@ -113,7 +113,7 @@ Using a URL shortener to hide a redirect destination is a well-documented phishi
 | 3 | SPF record misconfigured with entries after `-all` and references unrelated domain |
 | 4 | Embedded TinyURL returned 301 redirect and was terminated by TinyURL for Terms of Use violation |
 | 5 | Email employs urgency and authority impersonation — hallmark social engineering techniques |
-| 6 | Legitimate Microsoft security emails originate from `@accountprotection.microsoft.com` |
+
 
 ---
 
