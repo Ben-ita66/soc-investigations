@@ -91,7 +91,7 @@ ping -c 20 <Ubuntu_IP>
 
 Navigated to **Threat Hunting** on the Wazuh dashboard and confirmed ICMP ping alerts were visible.
 
-![Wazuh Dashboard Alerts](images/wazuh-dashboard.png)
+![Wazuh Dashboard Alerts](images/wazuh-dashboard.jpg)
 
 ---
 
