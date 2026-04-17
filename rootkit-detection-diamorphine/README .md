@@ -77,7 +77,7 @@ systemctl restart wazuh-agent
 git clone https://github.com/m0nad/Diamorphine
 ```
 
-![Cloning Diamorphine](images/clone_diamorphine.jpg)
+![Cloning Diamorphine](images/clone_diamorphine.png)
 
 ### 2. Install the make tool
 
