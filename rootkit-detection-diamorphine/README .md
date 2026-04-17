@@ -77,7 +77,7 @@ systemctl restart wazuh-agent
 git clone https://github.com/m0nad/Diamorphine
 ```
 
-![Cloning Diamorphine](images/Cloning%20Diamorphine%20.jpg)
+![Cloning Diamorphine](images/clone_diamorphine.jpg)
 
 ### 2. Install the make tool
 
@@ -97,6 +97,8 @@ make
 ```bash
 insmod diamorphine.ko
 ```
+
+![installing Make tool](images/make_diamorphine.png)
 
 > Diamorphine is now installed on the Ubuntu endpoint. By default it hides itself, so running `lsmod` will not show it.
 
