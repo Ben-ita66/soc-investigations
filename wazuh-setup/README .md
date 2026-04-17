@@ -52,7 +52,7 @@ curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-i
 
 > This takes time — be patient and let it run. If you are on Kali, you will get a warning about the system not matching recommended systems. Ignore it and let the script continue.
 
-![Wazuh Installation via curl](images/wazuh-install.png)
+![Wazuh Installation via curl](images/Using_curl_to_install_wazuh.jpg)
 
 ### 4. Save your credentials
 
@@ -81,7 +81,7 @@ https://<your-tailscale-ip>
 
 Log in with `admin` and the password from step 4.
 
-![Wazuh Dashboard](images/wazuh-dashboard.png)
+![Wazuh Dashboard](images/Screenshot_20260416_202050_LinkedIn.jpg)
 
 ### 7. Restart Wazuh services (run this every time you boot the VM)
 
@@ -132,7 +132,7 @@ sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
 ```
 
-![Wazuh Agent Added](images/wazuh-agent.png)
+![Wazuh Agent Added](images/Adding_the_agent_to_wazuh.jpg)
 
 ---
 
