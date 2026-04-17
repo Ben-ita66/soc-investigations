@@ -77,7 +77,7 @@ systemctl restart wazuh-agent
 git clone https://github.com/m0nad/Diamorphine
 ```
 
-![Cloning Diamorphine](images/diamorphine-clone.png)
+![Cloning Diamorphine](images/Cloning%20Diamorphine%20.jpg)
 
 ### 2. Install the make tool
 
@@ -127,7 +127,7 @@ kill -31 <PID_OF_RSYSLOGD>
 ps auxw | grep rsyslog | grep -v grep
 ```
 
-![Hidden Process Commands](images/kill-signal.png)
+![Hidden Process Commands](images/Killing_process_images.jpg)
 
 > After hiding rsyslogd, the next rootcheck scan (within 2 minutes) will detect the hidden process and send an alert to Wazuh.
 
@@ -137,7 +137,7 @@ ps auxw | grep rsyslog | grep -v grep
 
 Navigate to **Threat Hunting** on the Wazuh dashboard and filter by the `Tsacademy` agent. You will see alerts flagged as **"Possible kernel level rootkit"** with rule level 11.
 
-![Wazuh Dashboard — Rootkit Detected](images/wazuh-rootkit-alert.png)
+![Wazuh Dashboard — Rootkit Detected](images/Rootkit_attack.jpg)
 
 ---
 
