@@ -38,7 +38,7 @@ Edited `/var/ossec/etc/ossec.conf` and added the following inside the existing `
 ```xml
 <directories realtime="yes">/root</directories>
 ```
-![Directories realtime](images/directories_in_real_time.jpg)
+![Directories realtime](images/directories_in_real_time.png)
 
 **Step A2 — Create the active response playbook**
 
@@ -51,7 +51,7 @@ FILE=$(echo "$INPUT_JSON" | jq -r .parameters.alert.data.virustotal.source.file)
 rm -f "$FILE"
 exit 0
 ```
-![Playbook](images/playbook_file.jpg)
+![Playbook](images/playbook_file.png)
 
 **Step A3 — Set correct permissions**
 
@@ -87,7 +87,7 @@ Edited `/var/ossec/etc/rules/local_rules.xml` and added:
   </rule>
 </group>
 ```
-![Detection rules](images/detection_rules.jpg)
+![Detection rules](images/detection_rules.png)
 
 **Step 2 — Configure VirusTotal integration**
 
@@ -123,7 +123,7 @@ Also in `ossec.conf`:
 
 > **Note:** `<command>` entries must appear **before** `<active-response>` entries in the config file. Wrong order will prevent the Wazuh Manager from starting.
 
-![Command and active response](images/command_active_response.jpg)
+![Command and active response](images/command_active_response.png)
 
 **Step 4 — Restart the Wazuh manager**
 
@@ -142,7 +142,7 @@ sudo apt install curl
 sudo curl -Lo /root/eicar.com https://secure.eicar.org/eicar.com
 ```
 
-![Download eicar](images/downloading_eicar.jpg)
+![Download eicar](images/downloading_eicar.png)
 
 **Expected result:**
 - File appears in /root ✔
@@ -152,7 +152,7 @@ sudo curl -Lo /root/eicar.com https://secure.eicar.org/eicar.com
 
 **Dashboard evidence:**
 
-![VirusTotal Alert on Wazuh Dashboard](images/wazuh-dashboard.jpg)
+![VirusTotal Alert on Wazuh Dashboard](images/wazuh_dashboard.jpg)
 
 ---
 
